@@ -1,9 +1,10 @@
-/* Styles CSS avancés pour le portfolio artistique */
+/* Styles CSS avancés pour le portfolio artistique avec images rétro des années 70 */
 
 /* Styles de base */
 body {
     font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
+    background: url('../assets/img/fleurs.webp') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ body {
   
   /* Header au design rétro-moderne et sophistiqué */
   header {
-    background: linear-gradient(to right, #FF8C42, #FF6347);
+    background: linear-gradient(to right, rgba(255, 140, 66, 0.9), rgba(255, 99, 71, 0.9));
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 20px 0;
     position: sticky;
@@ -76,7 +77,7 @@ body {
   .section-wrapper {
     margin-top: 40px;
     padding: 40px;
-    background: #fff;
+    background: rgba(255, 250, 240, 0.95);
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
@@ -89,10 +90,12 @@ body {
   }
   
   .miniatures-section, .peintures-section {
-    background: #fafafa;
+    background: url('../assets/img/arc-en-ciel.webp') no-repeat center center;
+    background-size: cover;
     padding: 20px;
     border-radius: 15px;
     transition: all 0.3s ease;
+    color: #fff;
   }
   
   .miniatures-section:hover, .peintures-section:hover {
@@ -148,11 +151,13 @@ body {
   
   /* Section À propos */
   #a-propos {
-    background: #FFFAF0;
+    background: url('../assets/img/machine-a-ecrire.webp') no-repeat center center;
+    background-size: cover;
     padding: 60px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
+    color: #fff;
   }
   
   #a-propos p {
@@ -162,11 +167,13 @@ body {
   
   /* Section Contact */
   #contact {
-    background: #fff;
+    background: url('../assets/img/van.webp') no-repeat center center;
+    background-size: cover;
     padding: 60px;
     border-radius: 15px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     margin-top: 40px;
+    color: #fff;
   }
   
   form label {
@@ -252,4 +259,3 @@ body {
     background: #FF4500;
     transform: translateY(-5px);
   }
-  
