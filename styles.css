@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 90%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -29,7 +29,7 @@ header {
     display: flex;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     gap: 20px;
-    list-style-type: none; /* Enlève les puces */
+    /* list-style-type: none; Enlève les puces */
 }
 
 nav {
@@ -39,9 +39,9 @@ nav {
     align-items: center;
     justify-content: center;
     padding: 15px;
-    margin: 0 auto;
-    list-style: none;
-    width: fit-content;
+    margin: 0;
+    /* list-style: none; */
+    width: 100%;
     flex-wrap: nowrap;
     background: radial-gradient(circle, #FF8C42, #FF6347, #8B4513); /* Dégradé dynamique pour un effet vintage */
     border-radius: 30px; /* Arrondi pour un effet plus doux */
@@ -49,10 +49,12 @@ nav {
 
 nav ul {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     padding: 0;
-    margin: 0;
-    list-style: none;
+    margin: 0 auto;
+    /* list-style: none; */
+    justify-content: center;
+    gap: 150px; /* Espacement entre les liens */
 }
 
 nav ul li {
@@ -71,7 +73,7 @@ nav a {
     color: #FFFACD;
     text-shadow: 2px 2px #8B4513; /* Ombre pour un effet vintage */
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 20px 40px;
     border-radius: 20px; /* Coins arrondis pour un effet bouton rétro */
     background: linear-gradient(to bottom, #FF8C42, #FF7F24); /* Dégradé pour effet plastique rétro */
     border: 2px solid #8B4513;
