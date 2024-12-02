@@ -56,7 +56,7 @@
                 </div>
                 <div class="peintures-section">
                     <h3>Peintures</h3>
-                    <div class="carousel swiper-container">
+                    <div class="swiper-container">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide" id="peinture1">
                                 <img src="assets/img/peinture1.jpg" alt="Peinture 1 - Vue 1" loading="lazy">
@@ -66,10 +66,11 @@
                                 <img src="assets/img/papillon.jpg" alt="Peinture 2 - Vue 1" loading="lazy">
                                 <p>Peinture 2 - Titre et description</p>
                             </div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
+                            <!-- Add Pagination -->
                             <div class="swiper-pagination"></div>
-                            <!-- Ajouter des IDs pour chaque peinture supplémentaire -->
+                            <!-- Add Navigation -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
                         </div>
                     </div>
                 </div>
@@ -123,7 +124,8 @@
         <button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Retour en haut</button>
     </footer>
 
-    <script src="script.js" defer></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="script.js" defer></script>
+
 </body>
 </html>

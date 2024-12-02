@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Initialiser Swiper pour le carrousel de peintures
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
+        loop: true,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -11,11 +11,10 @@ document.addEventListener('DOMContentLoaded', function () {
             el: '.swiper-pagination',
             clickable: true,
         },
-        loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 3000,
             disableOnInteraction: false,
-        },
+        }
     });
 
     // Validation du formulaire de contact
