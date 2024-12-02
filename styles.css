@@ -15,30 +15,67 @@ body {
     padding: 20px;
 }
 
+/* Header au style rétro des années 70 */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-header nav ul {
-    list-style: none;
-    padding: 0;
+    background-color: #FF8C42;
+    padding: 20px;
     display: flex;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    gap: 20px;
+    list-style-type: none; /* Enlève les puces */
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
     justify-content: center;
-    gap: 15px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: auto;
+    flex-wrap: nowrap;
 }
 
-header nav a {
-    color: #fff;
-    text-decoration: none;
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.2rem;
+    color: #FFFACD;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #8B4513;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+    margin: 0;
 }
 
-header nav a:hover {
-    color: #00bcd4;
+nav a:hover {
+    background-color: #FFA07A;
+    transform: scale(1.05);
+}
+
+nav a:active {
+    background-color: #FF6347;
+    transform: scale(0.95);
 }
 
 .projects-container {
@@ -46,7 +83,6 @@ header nav a:hover {
     flex-wrap: wrap;
     gap: 30px;
     margin-top: 30px;
-    justify-content: space-between;
 }
 
 .miniatures-section, .peintures-section {
@@ -68,33 +104,6 @@ header nav a:hover {
     width: calc(33.333% - 10px);
     height: auto;
     border-radius: 8px;
-}
-
-/* Swiper Styles */
-.swiper-container {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
-
-.swiper-wrapper {
-    display: flex;
-    overflow: visible;
-}
-
-.swiper-slide {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-}
-
-.swiper-button-next, .swiper-button-prev {
-    color: #333;
-    z-index: 10;
 }
 
 footer {
@@ -131,11 +140,10 @@ footer {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    display: block;
     background-color: #00bcd4;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    padding: 10px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
