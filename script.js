@@ -1,21 +1,31 @@
-document.addEventListener('DOMContentLoaded', function () {
-    var swiper = new Swiper('.swiper-container', {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        loop: true,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true,
-        },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false,
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    on: {
+        slideChange: function () {
+            const slides = document.querySelectorAll('.swiper-slide img');
+            slides.forEach(slide => {
+                slide.style.width = '100%';
+                slide.style.height = '300px';
+                slide.style.objectFit = 'cover';
+            });
         }
-    });
+    }
+});
+
 
     // Validation du formulaire de contact
     const form = document.querySelector('form');
@@ -40,4 +50,3 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-});
