@@ -1,4 +1,4 @@
-/* Styles CSS avancés pour le portfolio artistique avec images rétro des années 70 */
+/* Styles CSS avancés pour le portfolio artistique */
 
 /* Styles de base */
 body {
@@ -73,18 +73,50 @@ body {
     transform: scale(1.1);
   }
   
-  /* Section Projets */
-  .section-wrapper {
+  /* Disposition des sections "À propos", "Miniatures" et "Peintures" en trois colonnes */
+  #main-content {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
     margin-top: 40px;
-    padding: 40px;
+  }
+  
+  #a-propos {
+    flex: 1;
     background: rgba(255, 250, 240, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #a-propos .about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Section Miniatures */
+  .miniatures-section {
+    flex: 1;
+    background: rgba(255, 250, 240, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Section Peintures */
+  .peintures-section {
+    flex: 1;
+    background: rgba(255, 250, 240, 0.95);
+    padding: 40px;
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
   .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 30px;
     margin-top: 30px;
   }
@@ -147,22 +179,6 @@ body {
   
   .swiper-pagination, .swiper-button-next, .swiper-button-prev {
     color: #FF6347;
-  }
-  
-  /* Section À propos */
-  #a-propos {
-    background: url('../assets/img/machine-a-ecrire.webp') no-repeat center center;
-    background-size: cover;
-    padding: 60px;
-    border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    margin-top: 40px;
-    color: #fff;
-  }
-  
-  #a-propos p {
-    font-size: 1.2rem;
-    line-height: 1.8;
   }
   
   /* Section Contact */
@@ -259,3 +275,4 @@ body {
     background: #FF4500;
     transform: translateY(-5px);
   }
+  
