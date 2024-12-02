@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio artistique présentant des miniatures et des peintures immersives. Découvrez un univers onirique et créatif.">
+    <meta name="keywords" content="art, miniatures, peinture, artiste, portfolio">
+    <title>Portfolio Artistique</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bienvenue dans mon univers artistique</h1>
+            <nav>
+                <ul>
+                    <li><a href="#accueil" aria-label="Accueil">Accueil</a></li>
+                    <li><a href="#projets" aria-label="Projets artistiques">Projets</a></li>
+                    <li><a href="#a-propos" aria-label="En savoir plus sur l'artiste">À propos</a></li>
+                    <li><a href="#contact" aria-label="Formulaire de contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="projets" class="container">
+        <div class="section-wrapper">
+            <h2>Projets</h2>
+            <div class="projects-container">
+                <div class="miniatures-section">
+                    <h3>Miniatures</h3>
+                    <div class="project" id="miniature1">
+                        <div class="project-description">
+                            <h4>Miniature 1</h4>
+                            <p>Miniature 1 - Titre et description</p>
+                        </div>
+                        <div class="project-gallery">
+                            <img src="assets/img/miniature1-1.jpg" alt="Miniature 1 - Vue 1" loading="lazy">
+                            <img src="assets/img/miniature1-2.jpg" alt="Miniature 1 - Vue 2" loading="lazy">
+                            <img src="assets/img/miniature1-3.jpg" alt="Miniature 1 - Vue 3" loading="lazy">
+                        </div>
+                    </div>
+                    <div class="project" id="miniature2">
+                        <div class="project-description">
+                            <h4>Miniature 2</h4>
+                            <p>Miniature 2 - Titre et description</p>
+                        </div>
+                        <div class="project-gallery">
+                            <img src="assets/img/miniature2-1.jpg" alt="Miniature 2 - Vue 1" loading="lazy">
+                            <img src="assets/img/miniature2-2.jpg" alt="Miniature 2 - Vue 2" loading="lazy">
+                            <img src="assets/img/miniature2-3.jpg" alt="Miniature 2 - Vue 3" loading="lazy">
+                        </div>
+                    </div>
+                    <!-- Ajouter des IDs pour chaque miniature supplémentaire -->
+                </div>
+                <div class="peintures-section">
+                    <h3>Peintures</h3>
+                    <div class="carousel swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" id="peinture1">
+                                <img src="assets/img/peinture1.jpg" alt="Peinture 1 - Vue 1" loading="lazy">
+                                <p>Peinture 1 - Titre et description</p>
+                            </div>
+                            <div class="swiper-slide" id="peinture2">
+                                <img src="assets/img/papillon.jpg" alt="Peinture 2 - Vue 1" loading="lazy">
+                                <p>Peinture 2 - Titre et description</p>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-pagination"></div>
+                            <!-- Ajouter des IDs pour chaque peinture supplémentaire -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="a-propos" class="container">
+        <div class="section-wrapper">
+            <h2>À propos</h2>
+            <p>Je suis un(e) artiste passionné(e) par la peinture et la création de miniatures. Mes miniatures sont des représentations de petits univers, souvent remplis de végétation et de détails, créant des scènes oniriques et immersives. J'aime explorer la beauté des détails et partager mon travail avec le monde.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="container">
+        <div class="section-wrapper">
+            <h2>Contact</h2>
+            <form action="#" method="post">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <div class="captcha">
+                    <label for="captcha">Veuillez résoudre : 3 + 4 = </label>
+                    <input type="text" id="captcha" name="captcha" required>
+                </div>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mon Portfolio Artistique. Tous droits réservés.</p>
+            <div class="footer-links">
+                <a href="mailto:contact@portfolioartistique.com">contact@portfolioartistique.com</a>
+                <a href="#mentions-legales">Mentions légales</a>
+                <a href="#plan-du-site">Plan du site</a>
+            </div>
+            <div class="social-media">
+                <a href="https://instagram.com" target="_blank"><img src="icons/instagram.png" alt="Instagram"></a>
+                <a href="https://facebook.com" target="_blank"><img src="icons/facebook.png" alt="Facebook"></a>
+            </div>
+        </div>
+        <button id="topBtn" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">Retour en haut</button>
+    </footer>
+
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+</body>
+</html>
